@@ -3,7 +3,7 @@
 # Environment: Java mynamegeoff
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM i386/alpine:3.17.2
+FROM alpine:3.17.2
 
 LABEL maintainer="James@iC3Gaming, <james@ic3gaming.com>"
 
