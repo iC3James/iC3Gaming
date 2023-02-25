@@ -1,6 +1,6 @@
 # ----------------------------------
 # Pterodactyl Core Dockerfile
-# Environment: Java mynamegeoff
+# Environment: Linuxwtf
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
 FROM alpine:3.17.2
