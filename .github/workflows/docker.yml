@@ -13,9 +13,7 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-         - ptero-wine
-         - ptero-dotnet
-         - ptero-plutonium
+         - ptero-alpwine
     steps:
     #- name: Extract branch name
     #  shell: bash
