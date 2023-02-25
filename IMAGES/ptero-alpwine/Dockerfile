@@ -12,7 +12,7 @@ ENV WINEDEBUG=fixme-all
 ENV WINEARCH=win64
 ENV WINEPREFIX=/home/container/.wine
 
-RUN apk add --no-cache wine=3.0.4-r1 freetype=2.10.0-r0
+RUN apk add --no-cache wine=3.0.4-r1 freetype=2.10.0-r0 \
 
 #---- Pteroshiz ----#
 RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig \
