@@ -15,8 +15,7 @@ ENV WINEPREFIX=/home/container/.wine
 RUN apk add --no-cache wine=3.0.4-r1 freetype=2.10.0-r0 \
 
 #---- Pteroshiz ----#
-RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig \
-&& adduser --disabled-password --gecos "" --home /home/container container
+RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig && adduser --disabled-password --gecos "" --home /home/container container \
 USER container
 ENV USER=container HOME=/home/container
 
