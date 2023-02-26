@@ -14,7 +14,7 @@ ENV WINEPREFIX=/home/container/.wine
 
 
 #---- Pteroshiz ----#
-RUN apk add --no-cache --update wine winbind xvfb freetype curl ca-certificates openssl git tar bash sqlite fontconfig \
+RUN apk add --no-cache --update wine samba-winbind xvfb freetype curl ca-certificates openssl git tar bash sqlite fontconfig \
     && adduser --disabled-password --home /home/container container
 
 
