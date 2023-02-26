@@ -3,7 +3,7 @@
 # Environment: Linuxwtf
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM i386/alpine:3.17.2
+FROM alpine:latest
 
 LABEL maintainer="James@iC3Gaming, <james@ic3gaming.com>"
 LABEL org.opencontainers.image.source=https://github.com/iC3James/iC3Gaming
@@ -14,7 +14,7 @@ ENV WINEPREFIX=/home/container/.wine
 
 
 #---- Pteroshiz ----#
-RUN apk add --no-cache --update wine samba-winbind xvfb freetype curl ca-certificates openssl git tar bash sqlite fontconfig \
+RUN apk --no-cache upgrade && apk add --no-cache xvfb xvfb-run wine samba-winbind freetype curl ca-certificates openssl git tar bash sqlite fontconfig \
     && adduser --disabled-password --home /home/container container
 
 
