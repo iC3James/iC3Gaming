@@ -6,7 +6,7 @@
 FROM i386/alpine:3.17.2
 
 LABEL maintainer="James@iC3Gaming, <james@ic3gaming.com>"
-
+LABEL org.opencontainers.image.source=https://github.com/ic3james/ic3gaming
 #---- Wine ----#
 ENV WINEDEBUG=fixme-all
 ENV WINEARCH=win64
